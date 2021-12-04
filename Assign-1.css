@@ -1,0 +1,264 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: black;
+    color: white;
+}
+.Head-Main .blur .active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+.Head-Main {
+    margin: 50px auto;
+    max-width: 1200px;
+}
+.headMain {
+    display: flex;
+    justify-content: space-between;
+    height:200px;
+}
+.head {
+    padding: 20px;
+    font-size: 50px;
+}
+#task {
+    display: inline-block;
+    font-weight: bolder;
+}
+#list {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: lighter;
+}
+.head .inactive {
+    display:none;
+}
+.Btn{
+    display:none;
+  
+}
+.Btn .active {
+   width: 200px;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   font-size: 40px;
+   cursor: pointer;
+}
+.add-list:active {
+    font-size: 39px;
+    transition: 0.2s;
+    
+}
+.icon {
+    color:rgb(37, 37, 248);
+    margin-right: 10px;
+}
+.Head-Card{
+    visibility: hidden;
+}
+.headMain .Head-Card .active{
+    font-size: 40px;
+    font-weight: 600;
+    visibility:visible;
+    align-self: center;
+    margin:0 auto;
+}
+.addList {
+    width: 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
+}
+.addList:active {
+    font-size: 39px;
+    transition: 0.2s;
+}
+.add-list .inactive{
+    visibility: hidden;
+}
+.icon1 {
+    color: orangered;
+    margin-right: 10px;
+}
+.popup {
+    visibility: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 260px;
+    border: 2px solid orangered;
+    border-radius: 12px;
+    background-color:white;
+    color: black;
+}
+.popup.active {
+    visibility: visible;
+
+}
+.popup1 {
+    visibility: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 260px;
+    border: 2px solid orangered;
+    border-radius: 12px;
+    background-color:white;
+    color: black;
+    box-shadow: 1px 1px 5px grey;
+}
+.popup1.active {
+    visibility: visible;
+}
+.popup-text {
+    margin-top: 0;
+    font-size: 28px;
+    color: orangered;
+}
+#input{
+    width: 300px;
+    height: 50px;
+    margin-bottom: 20px;
+    border: 2px solid orangered;
+    border-radius: 5px;
+    text-align: center;
+}
+#input:active {
+    border: 2px solid black;
+}
+#input1 {
+    width: 300px;
+    height: 50px;
+    margin-bottom: 20px;
+    border: 2px solid orangered;
+    border-radius: 5px;
+    text-align: center;
+}
+#input1:active {
+    border: 2px solid black;
+}
+.detail button {
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: orangered;
+    border: none;
+    color: #fff;
+    font-size: 28px;
+    margin: 5px;
+}
+.createCard {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+}
+.card {
+    padding: 7px;
+    position: relative;
+    min-height: 300px;
+    min-width: 230px;
+    border: 0.5px solidorangered;
+    border-radius: 12px;
+    margin: 30px;
+    line-height: 30px;
+    background-color:white;
+    color: black;
+}
+.card1{
+    cursor:pointer;
+}
+.card2 {
+    font-size: 24px;
+    text-align: center;
+    font-weight: lighter;
+    color: orangered;
+   
+}
+.hr{
+    margin-left: 40px;
+}
+.container {
+    min-height: 200px;
+    padding-right:5px;
+}
+.btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 30px;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.btn .add1{
+    padding:5px;
+    cursor: pointer;
+}
+.btn .delete {
+    color:orangered;
+    padding:5px;
+    cursor: pointer;
+}
+.list1 {
+    list-style:none;
+}
+.list2{
+    font-size: 15px;
+    display: inline;
+}
+.markDone {
+    display: inline;
+    margin-left: 8px;
+    background-color:orangered;
+    font-size: 13px;
+    border-radius: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.markDone p {
+    display: inline;
+    color: #fff;
+    cursor: pointer;
+}
+.completed p {
+    text-decoration: line-through;
+    text-align: center;
+    color: orangered;
+    font-size: 25px;
+}
+.pending {
+    margin-top: 0;
+    display: flex;
+    padding-left: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
+}
+.icon2 {
+    margin-right: 10px;
+}
+.btn .add1:hover .btn .delete:hover{
+    font-size: 25px;
+    transition: 0.8s;
+}

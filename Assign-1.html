@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assign-1.css">
+    <script src="https://kit.fontawesome.com/fc3420a326.js" crossorigin="anonymous"></script>
+    <title>ToDo App</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="Head-Main blur">
+        <div class="headMain">
+            <div class="head">
+                <p id="task">Task</p>
+                <span id="list">Lists</span>
+            </div>
+            <div class="Btn" onclick="back(event)">
+                <div class="icon">
+                    <i class="fas fa-arrow-circle-left"></i>
+                </div>
+                <div class="back">
+                    <p>Back</p>
+                </div>
+            </div>
+            <div class="Head-Card">
+            </div>
+            <div class="addList" onclick="newCard()">
+                <div class="icon1">
+                    <i class="fas fa-plus-circle"></i>
+                </div>
+                <div class="add">
+                    <p>Add List</p>
+                </div>
+            </div>
+        </div>
+        <div class="createCard">
+        </div>
+    </div>
+    <div class="popup">
+        <p class="popup-text">Add New Item</p>
+        <input type="text" id="input" placeholder="Add New Item" >
+        <div class="detail">
+            <button class="add" onclick="addItem(list)">Add</button>
+            <button class="close" onclick="newItem()">Close</button>
+        </div>
+    </div>
+    <div class="popup1">
+        <p class="popup-text">Add New List</p>
+        <input type="text" id="input1" placeholder="Add New List">
+        <div class="detail">
+            <button class="add" onclick="addCard()">Add</button>
+            <button class="close" onclick="newCard()">Close</button>
+        </div>
+    </div>
+</body>
+<script src="Assign-1.js"></script>
+</html>
